@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="countryDataResponse"
+            type="com.lediya.dagger2.data.Row" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="@style/AppBar.View">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleText"
+        style="@style/TextViewStyle.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@{countryDataResponse.title}"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/descriptionText"
+        style="@style/TextViewStyle.Small"
+        android:text="@{countryDataResponse.description}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        style="@style/Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

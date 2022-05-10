@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dagger2 and Corountine using MVVM</string>
+    <string name="failure_toast">Please try after some time</string>
+    <string name="no_internet_toast">Internet not available</string>
+    <string name="test_title">"Flag"</string>
+    <string name="test_des">Hello World</string>
+    <string name="test_image">http://images.findicons.com/files/icons/662/world_flag/128/flag_of_canada.png</string>
+    <string name="title">About Canada</string>
+    <string name="test_package">com.lediya.dagger2</string>
+</resources>
